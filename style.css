@@ -1,4 +1,4 @@
-/* Reset some basic styles */
+/* Reset */
 * {
   margin: 0;
   padding: 0;
@@ -12,8 +12,12 @@ body {
   line-height: 1.6;
 }
 
-/* Language switch buttons */
-div[style*="text-align:center"] button {
+/* Language switch */
+.lang-switch {
+  text-align: center;
+  margin: 20px 0;
+}
+.lang-switch button {
   background: #111;
   color: #fff;
   border: none;
@@ -24,29 +28,19 @@ div[style*="text-align:center"] button {
   font-weight: bold;
   transition: background 0.3s;
 }
-
-div[style*="text-align:center"] button:hover {
+.lang-switch button:hover {
   background: #25D366;
-  color: #fff;
 }
 
-/* Header section */
+/* Header */
 header {
   background: #111;
   color: #fff;
   padding: 70px 20px;
   text-align: center;
 }
-
-header h1 {
-  font-size: 2.2em;
-  margin-bottom: 15px;
-}
-
-header p {
-  font-size: 1.1em;
-  margin-bottom: 25px;
-}
+header h1 { font-size: 2.2em; margin-bottom: 15px; }
+header p { font-size: 1.1em; margin-bottom: 25px; }
 
 /* CTA button */
 .btn {
@@ -59,13 +53,10 @@ header p {
   font-weight: bold;
   transition: background 0.3s;
 }
+.btn:hover { background: #128C7E; }
+.large-btn { font-size: 1.2em; padding: 18px 36px; }
 
-.btn:hover {
-  background: #128C7E;
-  color: #fff;
-}
-
-/* Section styling */
+/* Sections */
 section {
   background: #fff;
   margin: 30px auto;
@@ -73,30 +64,36 @@ section {
   max-width: 900px;
   border-radius: 10px;
   box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-}
-
-section h2 {
-  font-size: 1.8em;
-  margin-bottom: 15px;
   text-align: center;
 }
+section h2 { font-size: 1.8em; margin-bottom: 25px; }
 
-section ul {
-  list-style: none;
-  padding-left: 0;
+/* Services grid */
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
 }
-
-section ul li {
-  padding: 8px 0;
-  font-size: 1.05em;
-  text-align: center;
+.service {
+  flex: 1 1 200px;
+  max-width: 200px;
+  background: #f9f9f9;
+  padding: 25px 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  transition: transform 0.3s, box-shadow 0.3s;
 }
-
-section p {
-  text-align: center;
-  font-size: 1.05em;
-  margin: 15px 0;
+.service:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
 }
+.service i {
+  font-size: 2em;
+  color: #25D366;
+  margin-bottom: 10px;
+}
+.service p { font-size: 1em; }
 
 /* Footer */
 footer {
@@ -108,14 +105,8 @@ footer {
 
 /* Responsive */
 @media screen and (max-width: 768px) {
-  header h1 {
-    font-size: 1.8em;
-  }
-  section h2 {
-    font-size: 1.5em;
-  }
-  .btn {
-    padding: 12px 25px;
-    font-size: 0.95em;
-  }
+  header h1 { font-size: 1.8em; }
+  section h2 { font-size: 1.5em; }
+  .btn, .large-btn { padding: 12px 25px; font-size: 0.95em; }
+  .services { flex-direction: column; gap: 15px; }
 }
