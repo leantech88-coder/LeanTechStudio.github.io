@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Professional IT Solutions</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Custom IT solutions, web apps, CMS, landing pages, PHP/WordPress development, and system management.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Language Switch -->
+<div style="text-align:center; margin:20px;">
+  <button onclick="showLang('en')">English</button>
+  <button onclick="showLang('cn')">中文</button>
+  <button onclick="showLang('my')">Bahasa Melayu</button>
+</div>
+
+<!-- English Content -->
+<div id="en">
+<header>
+  <h1>Professional IT Solutions</h1>
+  <p>Custom Web Apps, PHP/WordPress Development, CMS, Landing Pages & System Management</p>
+
+  <a class="btn" href="https://wa.me/60123456789?text=Hi%20I%20want%20to%20know%20about%20your%20IT%20solutions" target="_blank">
+    📲 Contact via WhatsApp
+  </a>
+</header>
+
+<section>
+  <h2>💡 What We Can Do</h2>
+  <ul>
+    <li>Web Application & CMS Development</li>
+    <li>PHP / WordPress Website Development & Customization</li>
+    <li>Landing Page Design & Optimization</li>
+    <li>Enterprise Management Systems (ERP / CRM / HRM)</li>
+    <li>IT Consulting & Comprehensive Solutions</li>
+  </ul>
+</section>
+
+<section>
+  <h2>🎯 Who It's For</h2>
+  <p>SMEs, startups, service companies, and teams looking to digitalize their operations</p>
+</section>
+
+<section>
+  <h2>📞 Get In Touch</h2>
+  <a class="btn" href="https://wa.me/60123456789" target="_blank">Contact via WhatsApp</a>
+</section>
+</div>
+
+<!-- Chinese Content -->
+<div id="cn" style="display:none;">
+<header>
+  <h1>专业 IT 解决方案</h1>
+  <p>定制 Web 应用、PHP/WordPress 开发、CMS、落地页及系统管理</p>
+
+  <a class="btn" href="https://wa.me/60123456789?text=您好，我想了解您们的IT解决方案" target="_blank">
+    📲 WhatsApp 联系
+  </a>
+</header>
+
+<section>
+  <h2>💡 我们可以帮你做什么？</h2>
+  <ul>
+    <li>Web 应用 & CMS 开发</li>
+    <li>PHP / WordPress 网站开发与定制</li>
+    <li>落地页设计与优化</li>
+    <li>企业管理系统 (ERP / CRM / HRM)</li>
+    <li>IT 咨询与整体解决方案</li>
+  </ul>
+</section>
+
+<section>
+  <h2>🎯 适合谁？</h2>
+  <p>中小企业、创业公司、服务型公司、需要数字化升级的团队</p>
+</section>
+
+<section>
+  <h2>📞 立即联系</h2>
+  <a class="btn" href="https://wa.me/60123456789" target="_blank">WhatsApp 联系</a>
+</section>
+</div>
+
+<!-- Malay Content -->
+<div id="my" style="display:none;">
+<header>
+  <h1>Penyelesaian IT Profesional</h1>
+  <p>Web App Custom, Pembangunan PHP/WordPress, CMS, Landing Page & Pengurusan Sistem</p>
+
+  <a class="btn" href="https://wa.me/60123456789?text=Hi%20Saya%20ingin%20tahu%20mengenai%20penyelesaian%20IT%20anda" target="_blank">
+    📲 Hubungi via WhatsApp
+  </a>
+</header>
+
+<section>
+  <h2>💡 Apa yang Kami Boleh Buat</h2>
+  <ul>
+    <li>Pembangunan Web App & CMS</li>
+    <li>Pembangunan & Kustomisasi Laman Web PHP / WordPress</li>
+    <li>Reka Bentuk & Optimasi Landing Page</li>
+    <li>Sistem Pengurusan Syarikat (ERP / CRM / HRM)</li>
+    <li>Perundingan IT & Penyelesaian Menyeluruh</li>
+  </ul>
+</section>
+
+<section>
+  <h2>🎯 Sesuai Untuk Siapa</h2>
+  <p>PKS, syarikat permulaan, perkhidmatan, dan pasukan yang ingin mendigitalisasi operasi mereka</p>
+</section>
+
+<section>
+  <h2>📞 Hubungi Sekarang</h2>
+  <a class="btn" href="https://wa.me/60123456789" target="_blank">Hubungi via WhatsApp</a>
+</section>
+</div>
+
+<script>
+function showLang(lang){
+  document.getElementById('en').style.display = (lang==='en') ? 'block' : 'none';
+  document.getElementById('cn').style.display = (lang==='cn') ? 'block' : 'none';
+  document.getElementById('my').style.display = (lang==='my') ? 'block' : 'none';
+}
+</script>
+
+</body>
+</html>
